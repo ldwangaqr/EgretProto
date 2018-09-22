@@ -1,0 +1,1 @@
+{"version":3,"file":"MessageManager.js","sourceRoot":"","sources":["../src/MessageManager.ts"],"names":[],"mappings":"AAAA,QAAQ;AACR,IAAO,GAAG,CAOT;AAPD,WAAO,GAAG;IACN;;OAEG;IACH,wBAA+B,IAAsB;QACjD,OAAO,CAAC,KAAK,CAAC,QAAQ,EAAE,IAAI,CAAC,GAAG,CAAC,CAAC;IACtC,CAAC;IAFe,kBAAc,iBAE7B,CAAA;AACL,CAAC,EAPM,GAAG,KAAH,GAAG,QAOT"}

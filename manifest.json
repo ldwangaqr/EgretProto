@@ -1,0 +1,21 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/tween/tween.js",
+		"protobuf/library/protobuf-library.js",
+		"protobuf/bundles/protobuf-bundles.js",
+		"protobuf/library/protobuf-library.js",
+		"protobuf/bundles/protobuf-bundles.js"
+	],
+	"game": [
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/MessageManager.js",
+		"bin-debug/Platform.js",
+		"bin-debug/Socket.js",
+		"bin-debug/ThemeAdapter.js"
+	]
+}

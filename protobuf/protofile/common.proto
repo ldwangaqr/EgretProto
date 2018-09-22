@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package Cmd;
+
+//请求玩家信息
+message GetUserDataC {
+    optional string uid = 1; //玩家uid
+}
+
+//获取玩家信息
+message GetUserDataS {
+    optional string info = 1; //玩家信息
+}
