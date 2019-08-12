@@ -57,7 +57,7 @@ module Cmd {
             var b = str2ab(a);
             var nameData = new egret.ByteArray(b);
             var sendByteArray = new egret.ByteArray();
-            sendByteArray.writeInt(nameData.length);
+            sendByteArray.writeShort(nameData.length);
             sendByteArray.writeBytes(nameData);
             sendByteArray.writeBytes(sendData);
             console.log("[sned]" + name, data, sendByteArray.buffer);
@@ -84,9 +84,9 @@ module Cmd {
         public static deCodeData(data: ArrayBuffer) {
             var bytes: ArrayBuffer = data;
             /**获取类型名长度 */
-            var nameLength = Number(bytes.slice(0, 3));
+            var nameLength = Number(bytes.slice(0, 1));
             /**获取类型名 */
-            var namebyte = bytes.slice(4, nameLength);
+            var namebyte = bytes.slice(2, nameLength);
             var Name = ab2str(namebyte);
             console.error(Name + "获取的类型名");
             /**反序列化 */
