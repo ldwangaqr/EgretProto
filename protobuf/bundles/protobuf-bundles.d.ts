@@ -1,5 +1,4 @@
 type Long = protobuf.Long;
-// DO NOT EDIT! This is a generated file. Edit the JSDoc in src/*.js instead and run 'npm run types'.
 
 /** Namespace Cmd. */
 declare namespace Cmd {
@@ -71,27 +70,6 @@ declare namespace Cmd {
          * @returns `null` if valid, otherwise the reason why it is not
          */
         public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a GetUserDataC message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns GetUserDataC
-         */
-        public static fromObject(object: { [k: string]: any }): Cmd.GetUserDataC;
-
-        /**
-         * Creates a plain object from a GetUserDataC message. Also converts values to other types if specified.
-         * @param message GetUserDataC
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: Cmd.GetUserDataC, options?: protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this GetUserDataC to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
     }
 
     /** Properties of a GetUserDataS. */
@@ -161,26 +139,5 @@ declare namespace Cmd {
          * @returns `null` if valid, otherwise the reason why it is not
          */
         public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a GetUserDataS message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns GetUserDataS
-         */
-        public static fromObject(object: { [k: string]: any }): Cmd.GetUserDataS;
-
-        /**
-         * Creates a plain object from a GetUserDataS message. Also converts values to other types if specified.
-         * @param message GetUserDataS
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: Cmd.GetUserDataS, options?: protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this GetUserDataS to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
     }
 }

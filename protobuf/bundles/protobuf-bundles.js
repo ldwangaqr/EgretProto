@@ -151,54 +151,6 @@ $root.Cmd = (function() {
             return null;
         };
 
-        /**
-         * Creates a GetUserDataC message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof Cmd.GetUserDataC
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {Cmd.GetUserDataC} GetUserDataC
-         */
-        GetUserDataC.fromObject = function fromObject(object) {
-            if (object instanceof $root.Cmd.GetUserDataC)
-                return object;
-            var message = new $root.Cmd.GetUserDataC();
-            if (object.uid != null)
-                message.uid = String(object.uid);
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a GetUserDataC message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof Cmd.GetUserDataC
-         * @static
-         * @param {Cmd.GetUserDataC} message GetUserDataC
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        GetUserDataC.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults)
-                object.uid = "";
-            if (message.uid != null && message.hasOwnProperty("uid"))
-                object.uid = message.uid;
-            return object;
-        };
-
-        /**
-         * Converts this GetUserDataC to JSON.
-         * @function toJSON
-         * @memberof Cmd.GetUserDataC
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        GetUserDataC.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
-
         return GetUserDataC;
     })();
 
@@ -336,54 +288,6 @@ $root.Cmd = (function() {
                 if (!$util.isString(message.info))
                     return "info: string expected";
             return null;
-        };
-
-        /**
-         * Creates a GetUserDataS message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof Cmd.GetUserDataS
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {Cmd.GetUserDataS} GetUserDataS
-         */
-        GetUserDataS.fromObject = function fromObject(object) {
-            if (object instanceof $root.Cmd.GetUserDataS)
-                return object;
-            var message = new $root.Cmd.GetUserDataS();
-            if (object.info != null)
-                message.info = String(object.info);
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a GetUserDataS message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof Cmd.GetUserDataS
-         * @static
-         * @param {Cmd.GetUserDataS} message GetUserDataS
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        GetUserDataS.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults)
-                object.info = "";
-            if (message.info != null && message.hasOwnProperty("info"))
-                object.info = message.info;
-            return object;
-        };
-
-        /**
-         * Converts this GetUserDataS to JSON.
-         * @function toJSON
-         * @memberof Cmd.GetUserDataS
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        GetUserDataS.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
         };
 
         return GetUserDataS;
